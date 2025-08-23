@@ -1,1 +1,1 @@
-# NLP_Text_summarize
+# Multilingual Summarizer
