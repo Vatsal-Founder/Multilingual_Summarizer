@@ -2,6 +2,7 @@ from src.MultilingualSummarizer.logging import logger
 from src.MultilingualSummarizer.pipeline.data_ingestion_pipeline import DataIngestionPipeline
 from src.MultilingualSummarizer.pipeline.data_trasformation_pipeline import DataTransformationPipeline
 from src.MultilingualSummarizer.pipeline.model_trainer_pipeline import ModelTrainerPipeline
+from src.MultilingualSummarizer.pipeline.model_evaulation_pipeline import ModelEvaluationPipeline
 
 STAGE_NAME="Data Ingestion Stage"
 
@@ -34,3 +35,13 @@ try:
 except Exception as e:
     logger.exception(e)
     raise e
+
+STAGE_NAME="Model Evaluation Stage"
+
+try:
+    logger.info(f"stage {STAGE_NAME} initiated")
+    model_evaluation_pipeline=ModelEvaluationPipeline()
+    model_evaluation_pipeline.initiate_model_evaluation()
+    logger.info(f"Stage {STAGE_NAME} Completed")
+except Exception as e:
+    logger.exception(e)
