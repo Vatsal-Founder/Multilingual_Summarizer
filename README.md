@@ -20,16 +20,8 @@ An end‑to‑end **MLOps** project that fine‑tunes **`csebuetnlp/mT5_multilin
 
 ## Architecture
 
-```
-Raw text/article ──► Ingestion ──► Preprocess (clean, tokenize) ──► Fine‑tune mT5
-                                                     │
-                                                     ├──► Evaluate (ROUGE, length)
-                                                     │
-                                                     └──► Package model + tokenizer ──► Flask API/UI
-                                                                                         │
-                                                                                         ▼
-                                                                                    Summary output
-```
+<img width="1536" height="1024" alt="ChatGPT Image Mar 9, 2026 at 04_48_42 PM" src="https://github.com/user-attachments/assets/95124dfa-b892-4554-b4e9-b0dd3d7faea8" />
+
 
 ---
 
