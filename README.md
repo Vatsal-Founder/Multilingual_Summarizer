@@ -6,8 +6,7 @@ An end‑to‑end **MLOps** project that fine‑tunes **`csebuetnlp/mT5_multilin
 > Base model: mT5 fine‑tuned on **XL‑Sum** (45 languages).
 
 [![HuggingFace Model](https://img.shields.io/badge/🤗%20Model-vatsal18/multi--lang__summay-blue)](https://huggingface.co/vatsal18/multi-lang_summay)
-[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker)](Dockerfile)
-[![CI/CD](https://img.shields.io/badge/CI/CD-GitHub%20Actions-2088FF?logo=github-actions)](https://github.com/Vatsal-Founder/Multilingual_Summarizer/actions)
+
 
 ---
 
